@@ -26,17 +26,19 @@ for line in sys.stdin.readlines():
                 occurences.append(str(doc) + "-" + str(line) + "-" + str(pos))
         else:
                 if currword != None and currword != "":
-                        print "%s\t%s" % (currword, currcount),
-                        for occurence in occurences:
-                                print "\t%s" % (occurence),
-                        print ""
+                        if currcount <= 1800:
+				print "%s\t%s" % (currword, currcount),
+                        	for occurence in occurences:
+                                	print "\t%s" % (occurence),
+                        	print ""
                 currcount = count
                 currword  = word
                 occurences = []
                 occurences.append(str(doc) + "-" + str(line) + "-" + str(pos))
 
 if word == currword:
-        print "%s\t%s" % (currword, currcount),
-        for occurence in occurences:
-                print "\t%s" % (occurence),
-print "\n"
+	if currcount <= 1800:
+        	print "%s\t%s" % (currword, currcount),
+        	for occurence in occurences:
+                	print "\t%s" % (occurence),
+		print "\n"
