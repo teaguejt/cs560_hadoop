@@ -10,6 +10,14 @@ word = None
 doc = None
 currdoc = None
 occurences = []
+stop_words = []
+
+# Read the stop words
+for arg in sys.argv:
+	if arg == sys.argv[0]:
+		continue
+	stop_words.append(arg)
+	
 
 for line in sys.stdin.readlines():
         line = line.strip()
@@ -19,6 +27,10 @@ for line in sys.stdin.readlines():
         except ValueError as e:
                 print "ValueError: " + str(e)
                 continue
+	
+	# Ignore stop words
+	if word in stop_words:
+		continue
 
         count = int(count)
         if word == currword:
@@ -26,19 +38,17 @@ for line in sys.stdin.readlines():
                 occurences.append(str(doc) + "-" + str(line) + "-" + str(pos))
         else:
                 if currword != None and currword != "":
-                        if currcount <= 1800:
-				print "%s\t%s" % (currword, currcount),
-                        	for occurence in occurences:
-                                	print "\t%s" % (occurence),
-                        	print ""
+			print "%s\t%s" % (currword, currcount),
+                       	for occurence in occurences:
+                               	print "\t%s" % (occurence),
+                       	print ""
                 currcount = count
                 currword  = word
                 occurences = []
                 occurences.append(str(doc) + "-" + str(line) + "-" + str(pos))
 
 if word == currword:
-	if currcount <= 1800:
-        	print "%s\t%s" % (currword, currcount),
-        	for occurence in occurences:
-                	print "\t%s" % (occurence),
-		print "\n"
+       	print "%s\t%s" % (currword, currcount),
+       	for occurence in occurences:
+               	print "\t%s" % (occurence),
+	print "\n"

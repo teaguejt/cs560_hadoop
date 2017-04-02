@@ -22,7 +22,7 @@ for line in sys.stdin:
 			currf = currfpl[-1].split('.')[0]
 			#currfps = currfpl[len(currfpl) - 1].split('.')
 			#currf = currfps[0]
-
+	
        	wordpos = 0
        	line = line.strip()
        	words = line.split()
