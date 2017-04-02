@@ -76,31 +76,31 @@ test1.txt contains:
 Mulder likes extraterrestrials
 
 test_index.txt contains:  
-a	2 	test-7-4 	test-6-7 
-air	1 	test-7-8 
-aliens	1 	test-2-5 
-as	2 	test-6-6 	test-7-6 
-believe	2 	test-4-5 	test-1-4 
-existence	1 	test-2-3 
-extraterrestrials	1 	test1-1-3 
-free	2 	test-6-8 	test-7-7 
-i	2 	test-1-1 	test-4-1 
-in	1 	test-2-1 
-is	2 	test-6-2 	test-7-2 
-like	1 	test-3-2 
-likes	1 	test1-1-2 
-lunch	1 	test-6-9 
-much	1 	test-3-1 
-mulder	2 	test-3-3 	test1-1-1 
-no	1 	test-6-3 
-of	1 	test-2-4 
-really	1 	test-4-2 
-such	2 	test-6-4 	test-7-3 
-the	1 	test-2-2 
-there	2 	test-6-1 	test-7-1 
-thing	2 	test-7-5 	test-6-5 
-to	2 	test-4-4 	test-1-3 
-want	2 	test-4-3 	test-1-2 
+a	2 	test-7-4 	test-6-7   
+air	1 	test-7-8   
+aliens	1 	test-2-5   
+as	2 	test-6-6 	test-7-6   
+believe	2 	test-4-5 	test-1-4   
+existence	1 	test-2-3   
+extraterrestrials	1 	test1-1-3   
+free	2 	test-6-8 	test-7-7   
+i	2 	test-1-1 	test-4-1   
+in	1 	test-2-1   
+is	2 	test-6-2 	test-7-2   
+like	1 	test-3-2   
+likes	1 	test1-1-2   
+lunch	1 	test-6-9   
+much	1 	test-3-1   
+mulder	2 	test-3-3 	test1-1-1   
+no	1 	test-6-3   
+of	1 	test-2-4   
+really	1 	test-4-2   
+such	2 	test-6-4 	test-7-3   
+the	1 	test-2-2   
+there	2 	test-6-1 	test-7-1   
+thing	2 	test-7-5 	test-6-5   
+to	2 	test-4-4 	test-1-3   
+want	2 	test-4-3 	test-1-2   
 
 Please note that for this example, due to the low word count and to demonstrate full functionality, there are no stop words sent to the reducer. This output demonstrates that the mapper and reducer succesfully counts words, records line number and position (taking blank lines into account), and emits results in an easily-processable format.
 
