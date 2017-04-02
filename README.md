@@ -107,3 +107,15 @@ Please note that for this example, due to the low word count and to demonstrate 
 The complete Shakespeare inverted index is also included with this submission in index.txt, but due to its extreme length it is not included in this readme.
 
 ## Submission
+The assignment is submitted as a tarball that contains the following files:  
+`README.md`: this file  
+`stop_mapper.py`: the mapper for stop word generation  
+`stop_reducer.py`: the reducer for stop word generation  
+`mapper.py`: the main mapper  
+`reducer.py`: the main reducer  
+`run.py`: the run script that should be used for the execution of the program  
+`gen_stop_words.txt` and `shakespeare_stop_words.txt`: the stop words generated from the works of William Shakespeare   
+`index.txt` and `shakespeare_index.txt`: the inverted index generated from the works of William Shakespeare  
+`test.txt` and `test1.txt`: test text files used as we developed the program  
+`test_index.txt`: the index generated using the above text files  
+`works_of_william.txt`: the complete works of William Shakespeare  
