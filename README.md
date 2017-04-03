@@ -143,5 +143,5 @@ The assignment is submitted as a tarball that contains the following files:
 `works_of_william.txt`: the complete works of William Shakespeare  
 `query.py`: the python local query file  
 `query.cgi`: the code for the web portal lookup  
-`q_*.txt`: sample query results for the word denoted by *  
+`q_*.txt`: sample query results for the word denoted by * . Two words are intentionally not in the index: "maseratti" because it isn't there, and "the" because it is filtered as a stop word.
 
