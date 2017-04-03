@@ -36,9 +36,15 @@ The reducer accepts stop words as command line arguments and stores them in a li
 
 Because map job splits can make line number calculations unpredictable, we have also included a run script. This run script performs preprocessing and invokes the mapper and reducer, executing all needed HDFS commands to ensure the desired output is obtained. More on this will be discussed in the "invocation" section, however the preprocessor needs to be mentioned here. Because line number calculations within MapReduce are unreliable, the preprocessor opens each file the user wants to process and adds the line number to the beginning of each line. This allows the mapper to obtain an accurate line number at each stage of its operation, without regard to how many map jobs are actually running.
 
-The query operates outside of HDFS and works thusly **INSERT HOW THE QUERY WORKS HERE**
+The query operates outside of HDFS and works by reading in to memory and then searching the inverted file index for given search terms.
 
-The web portal operates outside of HDFS and works thusly **IF WE FINISH THE PORTAL, HOW IT WORKS GOES HERE**
+The syntax to run the query script is as follows:
+
+`python2 ./query.py`
+
+The script will then prompt the user for one or more search terms. The query script can also accept a text file with search terms operated by white space from standard input.
+
+The web portal operates outside of HDFS and works by doing virtually the same thing as the query script to search the inverted file index except with additional operational functionality. The web portal search is able to handle searches including either an ‘and’, ‘or’, or ‘not’ operator. While ‘and’ and ‘or’ search operations can contain any number of words, the ‘not’ operator is strictly binary. 
 
 ## Invocation
 These invocation instructions assume that all environment variables are pre-configured.
@@ -61,7 +67,7 @@ The run script performs the following functions:
 When invoked using the run script, the stop words will be stored in the working directory as "gen_stop_words.txt" and the inverted index is stored in the working directory as "index.txt".
 
 ## Test Results
-Included with this assignment are two test text files and a sample inverted index file. They are, respectively, test.txt, test1.txt, and test_index.txt. These files are mostly nonsensical but demonstrate the operation of the program.
+Included with this assignment are four test text files and a sample inverted index file. They are, respectively, test.txt, test1.txt, test_input.txt, test_output.txt, and test_index.txt. These files are mostly nonsensical but demonstrate the operation of the program.
 
 test.txt contains:  
 I want to believe  
@@ -103,6 +109,16 @@ to	2 	test-4-4 	test-1-3
 want	2 	test-4-3 	test-1-2   
 
 Please note that for this example, due to the low word count and to demonstrate full functionality, there are no stop words sent to the reducer. This output demonstrates that the mapper and reducer succesfully counts words, records line number and position (taking blank lines into account), and emits results in an easily-processable format.
+
+Here is the example input and output for the query script:
+
+test_input.txt contains:
+cat dog heart cold ashamed accidental rolling
+heart soul shoulder break judgment
+                                     
+test_output.txt contains the output locations of the words given in test_input.txt, but was too long to include in this readme.
+
+The web portal can be found at : http://web.eecs.utk.edu/~cjacks53/projectII/projectII.html
 
 The complete Shakespeare inverted index is also included with this submission in index.txt, but due to its extreme length it is not included in this readme.
 
