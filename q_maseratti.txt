@@ -1,0 +1,7 @@
+Enter query: 
+Results.
+-------------------------
+maseratti: 0 occurences
+
+Word not in text: maseratti
+

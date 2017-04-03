@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+
 import sys
 
 ws = []
@@ -21,13 +22,19 @@ data = f.readlines()
 f.close
 
 word = {}
+count = {}
 
 for i in range(len(data)):
     line = data[i].strip()
     words = line.split()
+    # A situation can arise in which a blank line is encountered.
+    # Account for this
+    if len(words) == 0:
+        continue;
     w = words[0]
     if w not in word.keys():
       word[w] = {}
+      count[w] = words[1]
     for j in range(2,len(words)):
       p = words[j].split('-')
       if p[0] not in word[w].keys():
@@ -42,7 +49,10 @@ if ws:
     ws.remove("or")
   for s in ws:
     print "-------------------------"
-    print "%s:" % (s)
+    if s in word.keys():
+        print "%s: %s occurences" % (s, count[s])
+    else:
+        print "%s: 0 occurences" % (s)
     print ""
     if s in word.keys():
       docs = word[s].keys()

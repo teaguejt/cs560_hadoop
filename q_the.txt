@@ -1,0 +1,7 @@
+Enter query: 
+Results.
+-------------------------
+the: 0 occurences
+
+Word not in text: the
+

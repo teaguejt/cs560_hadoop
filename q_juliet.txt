@@ -1,0 +1,233 @@
+Enter query: 
+Results.
+-------------------------
+juliet: 76 occurences
+
+Document name: works_of_william
+Line #: 96247
+
+Document name: works_of_william
+Line #: 99140
+
+Document name: works_of_william
+Line #: 98691
+
+Document name: works_of_william
+Line #: 97928
+
+Document name: works_of_william
+Line #: 98705
+
+Document name: works_of_william
+Line #: 96933
+
+Document name: works_of_william
+Line #: 70571
+
+Document name: works_of_william
+Line #: 99123
+
+Document name: works_of_william
+Line #: 99301
+
+Document name: works_of_william
+Line #: 99118
+
+Document name: works_of_william
+Line #: 97947
+
+Document name: works_of_william
+Line #: 99381
+
+Document name: works_of_william
+Line #: 97570
+
+Document name: works_of_william
+Line #: 96311
+
+Document name: works_of_william
+Line #: 95768
+
+Document name: works_of_william
+Line #: 98423
+
+Document name: works_of_william
+Line #: 70565
+
+Document name: works_of_william
+Line #: 99111
+
+Document name: works_of_william
+Line #: 99116
+
+Document name: works_of_william
+Line #: 98073
+
+Document name: works_of_william
+Line #: 96764
+
+Document name: works_of_william
+Line #: 98419
+
+Document name: works_of_william
+Line #: 96679
+
+Document name: works_of_william
+Line #: 95802
+
+Document name: works_of_william
+Line #: 99306
+
+Document name: works_of_william
+Line #: 97299
+
+Document name: works_of_william
+Line #: 96911
+
+Document name: works_of_william
+Line #: 99360
+
+Document name: works_of_william
+Line #: 98923
+
+Document name: works_of_william
+Line #: 98557
+
+Document name: works_of_william
+Line #: 96654
+
+Document name: works_of_william
+Line #: 97419
+
+Document name: works_of_william
+Line #: 99373
+
+Document name: works_of_william
+Line #: 70740
+
+Document name: works_of_william
+Line #: 98577
+
+Document name: works_of_william
+Line #: 99263
+
+Document name: works_of_william
+Line #: 98562
+
+Document name: works_of_william
+Line #: 98166
+
+Document name: works_of_william
+Line #: 70311
+
+Document name: works_of_william
+Line #: 99259
+
+Document name: works_of_william
+Line #: 70557
+
+Document name: works_of_william
+Line #: 70559
+
+Document name: works_of_william
+Line #: 96761
+
+Document name: works_of_william
+Line #: 69786
+
+Document name: works_of_william
+Line #: 95801
+
+Document name: works_of_william
+Line #: 69950
+
+Document name: works_of_william
+Line #: 69743
+
+Document name: works_of_william
+Line #: 97877
+
+Document name: works_of_william
+Line #: 99229
+
+Document name: works_of_william
+Line #: 98901
+
+Document name: works_of_william
+Line #: 70548
+
+Document name: works_of_william
+Line #: 98087
+
+Document name: works_of_william
+Line #: 72530
+
+Document name: works_of_william
+Line #: 97905
+
+Document name: works_of_william
+Line #: 98735
+
+Document name: works_of_william
+Line #: 70545
+
+Document name: works_of_william
+Line #: 96512
+
+Document name: works_of_william
+Line #: 70552
+
+Document name: works_of_william
+Line #: 99206
+
+Document name: works_of_william
+Line #: 69745
+
+Document name: works_of_william
+Line #: 97912
+
+Document name: works_of_william
+Line #: 96636
+
+Document name: works_of_william
+Line #: 99194
+
+Document name: works_of_william
+Line #: 70554
+
+Document name: works_of_william
+Line #: 99016
+
+Document name: works_of_william
+Line #: 69509
+
+Document name: works_of_william
+Line #: 97991
+
+Document name: works_of_william
+Line #: 96355
+
+Document name: works_of_william
+Line #: 70535
+
+Document name: works_of_william
+Line #: 97409
+
+Document name: works_of_william
+Line #: 98532
+
+Document name: works_of_william
+Line #: 98112
+
+Document name: works_of_william
+Line #: 97681
+
+Document name: works_of_william
+Line #: 98392
+
+Document name: works_of_william
+Line #: 96245
+
+Document name: works_of_william
+Line #: 97813
+

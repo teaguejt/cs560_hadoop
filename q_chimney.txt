@@ -1,0 +1,26 @@
+Enter query: 
+Results.
+-------------------------
+chimney: 7 occurences
+
+Document name: works_of_william
+Line #: 21046
+
+Document name: works_of_william
+Line #: 45121
+
+Document name: works_of_william
+Line #: 56606
+
+Document name: works_of_william
+Line #: 29141
+
+Document name: works_of_william
+Line #: 12447
+
+Document name: works_of_william
+Line #: 29123
+
+Document name: works_of_william
+Line #: 77861
+

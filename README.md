@@ -5,6 +5,10 @@
 ## tl;dr
 Make sure your environment is set up and that a directory called "test" exists on the HDFS, then run `./run.py file1 file2 ...` to process your desired files (e.g. `./run.py works_of_william.txt`). When the command finishes, the generated list of stop words will be in gen_stop_words.txt and the inverted index will be in index.txt.
 
+Query the inverted index by running `python query.py` and entering a word. It will return the number of occurences of the word, plus the document ID and line number for each occurence.
+
+Use the web query by going to [http://web.eecs.utk.edu/~cjacks53/projectII/projectII.html](http://web.eecs.utk.edu/~cjacks53/projectII/projectII.html) and entering a search term. Please note that because this is on one of our personal accounts, it is impossible to change the index over which this query operates. It will always work with the Shakespeare inverted index. We could not find a way around this limitation.
+
 ## Stop words:
 This program assumes that large text files are being processed and removes any word that occurs more than 1800 times. This value was determined by examining a complete word count of the Works of William Shakespeare. Over 5MB text, words that occur over 1800 times are typically words that do not be analyzed like "the," "a," and "and." Words that are important typically do not occur more than 300 times, meaning 1800 is a safe cutoff even for larger file analysis.
 
@@ -38,12 +42,6 @@ Because map job splits can make line number calculations unpredictable, we have 
 
 The query operates outside of HDFS and works by reading in to memory and then searching the inverted file index for given search terms.
 
-The syntax to run the query script is as follows:
-
-`python2 ./query.py`
-
-The script will then prompt the user for one or more search terms. The query script can also accept a text file with search terms operated by white space from standard input.
-
 The web portal operates outside of HDFS and works by doing virtually the same thing as the query script to search the inverted file index except with additional operational functionality. The web portal search is able to handle searches including either an ‘and’, ‘or’, or ‘not’ operator. While ‘and’ and ‘or’ search operations can contain any number of words, the ‘not’ operator is strictly binary. 
 
 ## Invocation
@@ -65,6 +63,14 @@ The run script performs the following functions:
 9. Clean up by deleting the preprocessed files.  
 
 When invoked using the run script, the stop words will be stored in the working directory as "gen_stop_words.txt" and the inverted index is stored in the working directory as "index.txt".
+
+The syntax to run the query script is as follows:
+
+`python2 ./query.py`
+
+The script will then prompt the user for one or more search terms. The query script can also accept a text file with search terms operated by white space from standard input.
+
+The web portal can be accessed at [http://web.eecs.utk.edu/~cjacks53/projectII/projectII.html](http://web.eecs.utk.edu/~cjacks53/projectII/projectII.html). Due to the fact that it is stored in one of our personal directories, it only operates on the inverted index file we generated from the works of Shakespeare. There is no way to change the index over which it operates without access to Clarence's UTK account. We could not find a solution to this limitation.
 
 ## Test Results
 Included with this assignment are four test text files and a sample inverted index file. They are, respectively, test.txt, test1.txt, test_input.txt, test_output.txt, and test_index.txt. These files are mostly nonsensical but demonstrate the operation of the program.
@@ -135,3 +141,7 @@ The assignment is submitted as a tarball that contains the following files:
 `test.txt` and `test1.txt`: test text files used as we developed the program  
 `test_index.txt`: the index generated using the above text files  
 `works_of_william.txt`: the complete works of William Shakespeare  
+`query.py`: the python local query file  
+`query.cgi`: the code for the web portal lookup  
+`q_*.txt`: sample query results for the word denoted by *  
+
